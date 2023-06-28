@@ -28,6 +28,10 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/galleryone', function () {
+    return view('gallery');
+});
+
 Route::get('/about/history', function () {
     return view('history');
 });

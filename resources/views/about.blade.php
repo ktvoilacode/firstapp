@@ -11,12 +11,9 @@
 
 <body>
     <section class="container">
-        <ul class="menu">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/about/history">History</a></li>
-        </ul>
+        @include('snippets.logo')
+        @include('snippets.menu')
+
         <h1>This is about page</h1>
     </section>
 </body>
