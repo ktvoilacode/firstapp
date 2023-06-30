@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CalculatorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,4 +35,15 @@ Route::get('/galleryone', function () {
 
 Route::get('/about/history', function () {
     return view('history');
+});
+
+
+Route::get('/calculator/form', [CalculatorController::class, 'form']);
+Route::get('/calculator/result', [CalculatorController::class, 'result']);
+Route::get('/calculator/logs', [CalculatorController::class, 'logs']);
+
+Route::get('/string/form', function () {
+});
+
+Route::get('/string/result', function () {
 });
